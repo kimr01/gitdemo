@@ -2,9 +2,13 @@ S C:\Users\richa\projects\git> git commit -m "my first commit"
 [master (root-commit) 105afd1] my first commit
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 test1.txt
+
 PS C:\Users\richa\projects\git> git branch -M main
+
 PS C:\Users\richa\projects\git> git remote add origin https://github.com/kimr01/gitdemo.git
+
 PS C:\Users\richa\projects\git> git push -u origin main
+
 info: please complete authentication in your browser...
 Enumerating objects: 3, done.
 Counting objects: 100% (3/3), done.
@@ -15,6 +19,7 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/kimr01/gitdemo.git
  * [new branch]      main -> main
 branch 'main' set up to track 'origin/main'.
+
 PS C:\Users\richa\projects\git> git remote add origin https://github.com/kimr01/gitdemo.git
 error: remote origin already exists.
 PS C:\Users\richa\projects\git> ls
@@ -47,3 +52,19 @@ To https://github.com/kimr01/gitdemo.git
    105afd1..236a8e8  main -> main
 branch 'main' set up to track 'origin/main'.
 PS C:\Users\richa\projects\git>
+
+---- CreateBranch/ merge -----
+
+1. Create Branch
+git branch "Branch Name"
+
+2. Checkout Branch
+git checkout "Branch Name"
+
+3. Merge New Branch in the main branch
+git merge "Branche Name"
+
+4. Delete Branch
+git Branch -d "BranchName"
+git push origin --delete "BranchName"   //delete from remove
+
